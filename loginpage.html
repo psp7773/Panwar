@@ -1,0 +1,189 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        background-color: beige;
+        color: #fff;
+      }
+
+      .headstyle {
+        max-width: 600px;
+        margin: 0 auto;
+        position: relative;
+        top: 50px;
+      }
+
+      .imagee {
+        height: 350px;
+        background-image: url('21698299_6510654.jpg'); /* Replace with actual image */
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+        position: relative;
+      }
+
+      #welcome {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Cursive', sans-serif;
+        font-size: 2.5em;
+        color: #fff;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+      }
+
+      .para {
+        text-align: center;
+        font-size: 1.2em;
+        color: #f0e4e4;
+        margin-top: 10px;
+      }
+
+      .Createaccount {
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #e0dddc;
+        font-family: 'Cursive', sans-serif;
+        font-size: 1.1em;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      /* Login Form Styling */
+      form {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 30px;
+        border-radius: 15px;
+        margin-top: -40px;
+        color: #fff;
+      }
+
+      h2#textuserlogin {
+        text-align: center;
+        font-size: 2em;
+        font-family: 'Cursive', sans-serif;
+        margin-bottom: 20px;
+      }
+
+      input {
+        background-color: #3d2b1f;
+        color: #fff;
+        font-family: 'Cursive', sans-serif;
+        border-radius: 20px;
+        border: none;
+        padding: 12px;
+        width: 80%;
+        margin: 10px auto;
+        display: block;
+        font-size: 1em;
+      }
+
+      input::placeholder {
+        color: #d1c1b8;
+      }
+
+      a#forgot {
+        color: #d1c1b8;
+        text-decoration: none;
+        font-size: 0.9em;
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      button#submit {
+        background-color: #d1a254;
+        color: #fff;
+        font-size: 1.2em;
+        padding: 10px;
+        border-radius: 20px;
+        border: none;
+        cursor: pointer;
+        display: block;
+        width: 85%;
+        margin: 0 auto;
+      }
+
+      button#submit:hover {
+        background-color: #b88a3d;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .headstyle {
+          max-width: 500px;
+          margin-top: 20px;
+        }
+
+        .imagee {
+          height: 300px;
+        }
+
+        h2#textuserlogin {
+          font-size: 1.5em;
+        }
+
+        input, button#submit {
+          width: 90%;
+        }
+
+        #welcome {
+          font-size: 2em;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .headstyle {
+          max-width: 90%;
+        }
+
+        .imagee {
+          height: 250px;
+        }
+
+        h2#textuserlogin {
+          font-size: 1.2em;
+        }
+
+        #welcome {
+          font-size: 1.5em;
+        }
+
+        input, button#submit {
+          width: 95%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="headstyle">
+      <!-- Background Image and Text -->
+      <div class="imagee">
+        <h1 id="welcome">Welcome to the Website</h1>
+        <!-- <p class="para">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, sequi magnam.
+        </p> -->
+        <a class="Createaccount" href="createac.html" target="_blank">Create Account</a>
+      </div>
+
+      <!-- Login Form -->
+      <form action="">
+        <h2 id="textuserlogin">USER LOGIN</h2>
+        <input type="text" id="username" placeholder="🙎 Username" required><br><br>
+        <input type="password" id="password" placeholder="🔒 Password" required><br><br>
+        <a id="forgot" href="#">Forgot Password?</a><br><br>
+        <button id="submit" type="submit">Login</button>
+      </form>
+    </div>
+  </body>
+</html>
